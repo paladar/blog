@@ -11,6 +11,7 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+Route::get('/', 'Front\HomeController@show')->name('home');
+Route::prefix('admin')->name('admin.')->middleware(['auth'])->group(function () {
+
 });
