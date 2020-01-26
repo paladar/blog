@@ -12,6 +12,11 @@
 */
 
 Route::get('/', 'Front\HomeController@show')->name('home');
+Route::get('/register', 'Front\AuthController@registerShow')->name('registerShow');
+Route::get('/login', 'Front\AuthController@loginShow')->name('loginShow');
+Route::put('/register', 'Front\AuthController@register')->name('register');
+Route::put('/login', 'Front\AuthController@login')->name('login');
+Route::post('/logout', 'Front\AuthController@logout')->name('logout');
 Route::prefix('admin')->name('admin.')->middleware(['auth'])->group(function () {
 
 });

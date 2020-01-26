@@ -2,11 +2,11 @@
 
 namespace App\Providers;
 
-use App\Repositories\ArticleRepository;
 use App\Repositories\Interfaces\ArticleRepositoryInterface;
 use App\Repositories\Interfaces\PasswordResetRepositoryInterface;
 use App\Repositories\Interfaces\RoleRepositoryInterface;
 use App\Repositories\Interfaces\UserRepositoryInterface;
+use App\Repositories\ArticleRepository;
 use App\Repositories\PasswordResetRepository;
 use App\Repositories\RoleRepository;
 use App\Repositories\UserRepository;

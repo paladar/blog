@@ -2,9 +2,10 @@
 
 namespace App\Repositories;
 
+use App\Repositories\Interfaces\RoleRepositoryInterface;
 use App\Role;
 
-class RoleRepository
+class RoleRepository implements RoleRepositoryInterface
 {
     /**
      * Get all roles

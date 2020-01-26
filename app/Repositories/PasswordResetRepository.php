@@ -3,8 +3,9 @@
 namespace App\Repositories;
 
 use App\PasswordReset;
+use App\Repositories\Interfaces\PasswordResetRepositoryInterface;
 
-class PasswordResetRepository
+class PasswordResetRepository implements PasswordResetRepositoryInterface
 {
     /**
      * Get all password_resets

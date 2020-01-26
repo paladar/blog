@@ -2,9 +2,11 @@
 
 namespace App\Repositories;
 
+use App\Repositories\Interfaces\UserRepositoryInterface;
 use App\User;
+use Illuminate\Support\Facades\Hash;
 
-class UserRepository
+class UserRepository implements UserRepositoryInterface
 {
     /**
      * Get all users
@@ -28,7 +30,9 @@ class UserRepository
      * @param array $data
      */
     public function create($data){
-
+        $data['password'] = Hash::make($data['password']);
+        $data['role_id'] = 1;
+        User::create($data);
     }
 
     /**

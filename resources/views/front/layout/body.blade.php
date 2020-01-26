@@ -2,5 +2,7 @@
 
 @section('body')
 @include('front.layout.partials.header')
-@yield('content')
+<div class="content">
+    @yield('content')
+</div>
 @endsection

@@ -15,9 +15,21 @@ return [
 
     'front' => [
         'title' => 'Blog',
-        'home' => 'Home',
-        'register' => 'Register',
-        'login' => 'Login'
+        'pages' => [
+            'home' => 'Home',
+            'register' => 'Register',
+            'login' => 'Login',
+        ],
+        'auth' => [
+            'register' => 'Register new account',
+            'login' => 'Login to your account',
+            'email' => 'Email',
+            'name' => 'Name',
+            'password' => 'Password',
+            'password_confirmation' => 'Confirm password',
+            'register_confirm' => 'Register',
+            'login_confirm' => 'Login',
+        ]
     ]
 
 ];

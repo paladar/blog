@@ -3,8 +3,9 @@
 namespace App\Repositories;
 
 use App\Article;
+use App\Repositories\Interfaces\ArticleRepositoryInterface;
 
-class ArticleRepository
+class ArticleRepository implements ArticleRepositoryInterface
 {
     /**
      * Get all articles
